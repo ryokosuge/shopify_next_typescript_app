@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "server": "nodemon",
-    "dev": "next dev",
+    "dev": "nodemon",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@shopify/shopify-api": "1.4.1",
     "@shopify/app-bridge-react": "2.0.3",
     "@shopify/app-bridge-utils": "2.0.3",
     "@shopify/koa-shopify-auth": "4.1.4",
     "@shopify/polaris": "6.6.0",
+    "dotenv": "10.0.0",
     "koa": "2.13.3",
     "koa-router": "10.1.1",
     "koa-session": "6.2.0",
@@ -25,6 +26,7 @@
     "@types/koa": "2.13.4",
     "@types/koa-router": "7.4.4",
     "@types/koa-session": "5.10.4",
+    "@types/node": "16.10.1",
     "@types/react": "17.0.24",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",

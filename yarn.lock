@@ -288,7 +288,7 @@
     react-transition-group "^4.4.1"
     serve "^12.0.0"
 
-"@shopify/shopify-api@^1.2.1":
+"@shopify/shopify-api@^1.2.1", "@shopify/shopify-api@^1.4.1":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@shopify/shopify-api/-/shopify-api-1.4.1.tgz#8247037cacca274130e6dcdd974a6bd69057690d"
   integrity sha512-aZhPRyPTZvTwIvsqodShVa02mwrz4P2ShpBnbbvp614eCJkYALRtXKNSmEPjoPnmKmYfKjFkz+fsVtzsKLgbow==
@@ -472,7 +472,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*":
+"@types/node@*", "@types/node@16.10.1":
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.1.tgz#f3647623199ca920960006b3dccf633ea905f243"
   integrity sha512-4/Z9DMPKFexZj/Gn3LylFgamNKHm4K3QDi0gz9B26Uk0c8izYf97B5fxfpspMNkWlFupblKM/nV8+NA9Ffvr+w==
@@ -1614,6 +1614,11 @@ dot-prop@^5.2.0:
   integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
+
+dotenv@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
+  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
 duplexer3@^0.1.4:
   version "0.1.4"
