@@ -1,9 +1,11 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage = () => {
+const Home: NextPage = (prop) => {
+  console.info("Home");
+  console.log(prop);
   return (
     <div className={styles.container}>
       <Head>
@@ -68,5 +70,15 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+// export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
+//   const host = context.query.host as string;
+//   console.log(host);
+//   return {
+//     props: {
+//       host: host,
+//     },
+//   };
+// }
 
 export default Home

@@ -1,5 +1,7 @@
 /// <reference types="node" />
 
+declare var SHOPIFY_API_KEY: string;
+
 declare namespace NodeJS {
   interface ProcessEnv {
     PORT: string;
