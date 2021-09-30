@@ -90,12 +90,16 @@ server.keys = [Shopify.Context.API_SECRET_KEY];
       }
     });
 
-    router.get("(.*)", verifyRequest(), async (context) => {
+    router.get("/", async (context) => {
       const shop = context.query.shop as string;
       if (ACTIVE_SHOPIFY_SHOPS[shop] === undefined) {
         context.redirect(`/auth?shop=${shop}`);
         return;
       }
+      await handleRequest(context);
+    });
+
+    router.get("(.*)", verifyRequest(), async (context) => {
       await handleRequest(context);
     });
 

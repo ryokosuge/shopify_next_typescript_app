@@ -6,10 +6,11 @@ import "@shopify/polaris/dist/styles.css";
 import { Provider } from '@shopify/app-bridge-react';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const host = pageProps.host as string;
   const config = {
     apiKey: SHOPIFY_API_KEY,
-    host: pageProps.host,
-    forceRedirect: true
+    host: host,
+    forceRedirect: true,
   }
   return (
     <AppProvider i18n={translations}>
